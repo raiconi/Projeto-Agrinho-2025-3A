@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Agrinho</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "nav nav nav"
+                "header header aside"
+                "section1 section2 aside"
+                "footer footer footer";
+            grid-template-columns: 1fr 1fr 200px;
+            gap: 20px;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: b;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #90ee90;
+            padding: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #f4a6a6;
+            padding: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        section.section1 {
+            grid-area: section1;
+            background-color: #c6b3f3;
+            padding: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        section.section2 {
+            grid-area: section2;
+            background-color: #c6b3f3;
+            padding: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #f5eb9e;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>Projeto Agrinho: Poluição</nav>
+        <header>HEADER</header>
+        <aside>ASIDE</aside>
+        <section class="section1">SECTION 1</section>
+        <section class="section2">SECTION 2</section>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>
